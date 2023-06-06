@@ -196,4 +196,3 @@
   return Toast;
 
 }));
-//# sourceMappingURL=toast.js.map

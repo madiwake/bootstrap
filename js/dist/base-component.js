@@ -81,4 +81,3 @@
   return BaseComponent;
 
 }));
-//# sourceMappingURL=base-component.js.map
