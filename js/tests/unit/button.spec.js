@@ -90,8 +90,16 @@ describe('Button', () => {
       button.dispose()
 
       expect(Button.getInstance(btnEl)).toBeNull()
+
+      // ADDED TEST HEH
+
+      expect(() => {
+        button.dispose()
+      }).not.toThrow()
+
     })
   })
+  
 
   describe('jQueryInterface', () => {
     it('should handle config passed and toggle existing button', () => {

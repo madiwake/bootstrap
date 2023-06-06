@@ -158,6 +158,20 @@ describe('Alert', () => {
       expect(spy).toHaveBeenCalled()
     })
 
+    it('should throw an error on undefined method', () => {
+      fixtureEl.innerHTML = '<div></div>'
+  
+      const div = fixtureEl.querySelector('div')
+      const action = 'undefinedMethod'
+  
+      jQueryMock.fn.alert = Alert.jQueryInterface
+      jQueryMock.elements = [div]
+  
+      expect(() => {
+        jQueryMock.fn.alert.call(jQueryMock, action)
+      }).toThrowError(TypeError, `No method named "${action}"`)
+    })
+
     it('should create new alert instance and call close', () => {
       fixtureEl.innerHTML = '<div class="alert"></div>'
 

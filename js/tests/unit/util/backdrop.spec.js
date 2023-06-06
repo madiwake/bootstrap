@@ -300,6 +300,22 @@ describe('Backdrop', () => {
         })
       })
 
+      describe('rootElement initialization', () => {
+        it('should find the rootElement if passed as a string', () => {
+          return new Promise(resolve => {
+            const instance = new Backdrop({
+              isVisible: true,
+              rootElement: 'body'
+            })
+            const getElement = () => document.querySelector(CLASS_BACKDROP)
+            instance.show(() => {
+              expect(getElement().parentElement).toEqual(document.body)
+              resolve()
+            })
+          })
+        })
+      })
+
       describe('ClassName', () => {
         it('should allow configuring className', () => {
           return new Promise(resolve => {
