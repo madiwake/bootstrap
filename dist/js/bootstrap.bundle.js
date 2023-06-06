@@ -649,6 +649,21 @@
    */
 
   const VERSION = '5.3.0';
+  const NAME$f = 'alert';
+  const DATA_KEY$a = 'bs.alert';
+  const EVENT_KEY$b = `.${DATA_KEY$a}`;
+  const EVENT_CLOSE = `close${EVENT_KEY$b}`;
+  const EVENT_CLOSED = `closed${EVENT_KEY$b}`;
+  const CLASS_NAME_FADE$5 = 'fade';
+  const CLASS_NAME_SHOW$8 = 'show';
+  const NAME$e = 'button';
+  const DATA_KEY$9 = 'bs.button';
+  const EVENT_KEY$a = `.${DATA_KEY$9}`;
+  const DATA_API_KEY$6 = '.data-api';
+  const CLASS_NAME_ACTIVE$3 = 'active';
+  const SELECTOR_DATA_TOGGLE$5 = '[data-bs-toggle="button"]';
+  const EVENT_CLICK_DATA_API$6 = `click${EVENT_KEY$a}${DATA_API_KEY$6}`;
+  
 
   /**
    * Class definition
@@ -826,19 +841,6 @@
    * --------------------------------------------------------------------------
    */
 
-
-  /**
-   * Constants
-   */
-
-  const NAME$f = 'alert';
-  const DATA_KEY$a = 'bs.alert';
-  const EVENT_KEY$b = `.${DATA_KEY$a}`;
-  const EVENT_CLOSE = `close${EVENT_KEY$b}`;
-  const EVENT_CLOSED = `closed${EVENT_KEY$b}`;
-  const CLASS_NAME_FADE$5 = 'fade';
-  const CLASS_NAME_SHOW$8 = 'show';
-
   /**
    * Class definition
    */
@@ -900,19 +902,6 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
-
-
-  /**
-   * Constants
-   */
-
-  const NAME$e = 'button';
-  const DATA_KEY$9 = 'bs.button';
-  const EVENT_KEY$a = `.${DATA_KEY$9}`;
-  const DATA_API_KEY$6 = '.data-api';
-  const CLASS_NAME_ACTIVE$3 = 'active';
-  const SELECTOR_DATA_TOGGLE$5 = '[data-bs-toggle="button"]';
-  const EVENT_CLICK_DATA_API$6 = `click${EVENT_KEY$a}${DATA_API_KEY$6}`;
 
   /**
    * Class definition
@@ -991,6 +980,7 @@
     leftCallback: '(function|null)',
     rightCallback: '(function|null)'
   };
+  
 
   /**
    * Class definition
@@ -1085,66 +1075,6 @@
    * --------------------------------------------------------------------------
    */
 
-
-  /**
-   * Constants
-   */
-
-  const NAME$c = 'carousel';
-  const DATA_KEY$8 = 'bs.carousel';
-  const EVENT_KEY$8 = `.${DATA_KEY$8}`;
-  const DATA_API_KEY$5 = '.data-api';
-  const ARROW_LEFT_KEY$1 = 'ArrowLeft';
-  const ARROW_RIGHT_KEY$1 = 'ArrowRight';
-  const TOUCHEVENT_COMPAT_WAIT = 500; // Time for mouse compat events to fire after touch
-
-  const ORDER_NEXT = 'next';
-  const ORDER_PREV = 'prev';
-  const DIRECTION_LEFT = 'left';
-  const DIRECTION_RIGHT = 'right';
-  const EVENT_SLIDE = `slide${EVENT_KEY$8}`;
-  const EVENT_SLID = `slid${EVENT_KEY$8}`;
-  const EVENT_KEYDOWN$1 = `keydown${EVENT_KEY$8}`;
-  const EVENT_MOUSEENTER$1 = `mouseenter${EVENT_KEY$8}`;
-  const EVENT_MOUSELEAVE$1 = `mouseleave${EVENT_KEY$8}`;
-  const EVENT_DRAG_START = `dragstart${EVENT_KEY$8}`;
-  const EVENT_LOAD_DATA_API$3 = `load${EVENT_KEY$8}${DATA_API_KEY$5}`;
-  const EVENT_CLICK_DATA_API$5 = `click${EVENT_KEY$8}${DATA_API_KEY$5}`;
-  const CLASS_NAME_CAROUSEL = 'carousel';
-  const CLASS_NAME_ACTIVE$2 = 'active';
-  const CLASS_NAME_SLIDE = 'slide';
-  const CLASS_NAME_END = 'carousel-item-end';
-  const CLASS_NAME_START = 'carousel-item-start';
-  const CLASS_NAME_NEXT = 'carousel-item-next';
-  const CLASS_NAME_PREV = 'carousel-item-prev';
-  const SELECTOR_ACTIVE = '.active';
-  const SELECTOR_ITEM = '.carousel-item';
-  const SELECTOR_ACTIVE_ITEM = SELECTOR_ACTIVE + SELECTOR_ITEM;
-  const SELECTOR_ITEM_IMG = '.carousel-item img';
-  const SELECTOR_INDICATORS = '.carousel-indicators';
-  const SELECTOR_DATA_SLIDE = '[data-bs-slide], [data-bs-slide-to]';
-  const SELECTOR_DATA_RIDE = '[data-bs-ride="carousel"]';
-  const KEY_TO_DIRECTION = {
-    [ARROW_LEFT_KEY$1]: DIRECTION_RIGHT,
-    [ARROW_RIGHT_KEY$1]: DIRECTION_LEFT
-  };
-  const Default$b = {
-    interval: 5000,
-    keyboard: true,
-    pause: 'hover',
-    ride: false,
-    touch: true,
-    wrap: true
-  };
-  const DefaultType$b = {
-    interval: '(number|boolean)',
-    // TODO:v6 remove boolean support
-    keyboard: 'boolean',
-    pause: '(string|boolean)',
-    ride: '(boolean|string)',
-    touch: 'boolean',
-    wrap: 'boolean'
-  };
 
   /**
    * Class definition
