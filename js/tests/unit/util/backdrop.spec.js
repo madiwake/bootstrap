@@ -299,7 +299,7 @@ describe('Backdrop', () => {
           })
         })
       })
-
+      
       describe('rootElement initialization', () => {
         it('should find the rootElement if passed as a string', () => {
           return new Promise(resolve => {
